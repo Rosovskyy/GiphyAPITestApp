@@ -3,27 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAAAD62216BC29F7ED6FFBCF /* Pods_RosovGiphyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B9C7847332DA95EA8C90D4 /* Pods_RosovGiphyApp.framework */; };
+		C9014E1F24767DF500B86C7C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9014E1E24767DF500B86C7C /* HomeVC.swift */; };
+		C9014E2124767DFB00B86C7C /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9014E2024767DFB00B86C7C /* HomeVM.swift */; };
+		C9014E2324767E0100B86C7C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9014E2224767E0100B86C7C /* HomeRouter.swift */; };
+		C9014E2524767E0A00B86C7C /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9014E2424767E0A00B86C7C /* HomeProtocols.swift */; };
+		C9014E2724767EC900B86C7C /* MainContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9014E2624767EC900B86C7C /* MainContext.swift */; };
 		C96AE70C2475CC7300A05FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AE70B2475CC7300A05FEA /* AppDelegate.swift */; };
 		C96AE70E2475CC7300A05FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AE70D2475CC7300A05FEA /* SceneDelegate.swift */; };
-		C96AE7102475CC7300A05FEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AE70F2475CC7300A05FEA /* ViewController.swift */; };
 		C96AE7132475CC7300A05FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96AE7112475CC7300A05FEA /* Main.storyboard */; };
 		C96AE7152475CC7600A05FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96AE7142475CC7600A05FEA /* Assets.xcassets */; };
 		C96AE7182475CC7700A05FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96AE7162475CC7700A05FEA /* LaunchScreen.storyboard */; };
+		C96AE7222475CD2400A05FEA /* UIViewController+ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AE7202475CD2300A05FEA /* UIViewController+ID.swift */; };
+		C96AE7232475CD2400A05FEA /* Cell+ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AE7212475CD2400A05FEA /* Cell+ID.swift */; };
+		C96AE7262475CD4300A05FEA /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AE7252475CD4300A05FEA /* GiphyAPI.swift */; };
+		C971571F247686CD006D65DD /* GiphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971571E247686CD006D65DD /* GiphCell.swift */; };
+		C9715721247694E2006D65DD /* UITextField+Close.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9715720247694E2006D65DD /* UITextField+Close.swift */; };
+		C971572324769640006D65DD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971572224769640006D65DD /* UIColor.swift */; };
+		C991B2F52476794E00C4F5A1 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B2F42476794E00C4F5A1 /* DBManager.swift */; };
+		C991B2F824767B2D00C4F5A1 /* GiphResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B2F724767B2C00C4F5A1 /* GiphResponse.swift */; };
+		C991B2FA24767B3600C4F5A1 /* GiphRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B2F924767B3600C4F5A1 /* GiphRealm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53B9C7847332DA95EA8C90D4 /* Pods_RosovGiphyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RosovGiphyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D4AD92FD15B2B3DA7BC960 /* Pods-RosovGiphyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosovGiphyApp.debug.xcconfig"; path = "Target Support Files/Pods-RosovGiphyApp/Pods-RosovGiphyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BF780C8DD5C0DB8214CABF10 /* Pods-RosovGiphyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RosovGiphyApp.release.xcconfig"; path = "Target Support Files/Pods-RosovGiphyApp/Pods-RosovGiphyApp.release.xcconfig"; sourceTree = "<group>"; };
+		C9014E1E24767DF500B86C7C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C9014E2024767DFB00B86C7C /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		C9014E2224767E0100B86C7C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		C9014E2424767E0A00B86C7C /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		C9014E2624767EC900B86C7C /* MainContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContext.swift; sourceTree = "<group>"; };
 		C96AE7082475CC7300A05FEA /* RosovGiphyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosovGiphyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96AE70B2475CC7300A05FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96AE70D2475CC7300A05FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C96AE70F2475CC7300A05FEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C96AE7122475CC7300A05FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C96AE7142475CC7600A05FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96AE7172475CC7700A05FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C96AE7192475CC7700A05FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96AE7202475CD2300A05FEA /* UIViewController+ID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ID.swift"; sourceTree = "<group>"; };
+		C96AE7212475CD2400A05FEA /* Cell+ID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+ID.swift"; sourceTree = "<group>"; };
+		C96AE7252475CD4300A05FEA /* GiphyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
+		C971571E247686CD006D65DD /* GiphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphCell.swift; sourceTree = "<group>"; };
+		C9715720247694E2006D65DD /* UITextField+Close.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Close.swift"; sourceTree = "<group>"; };
+		C971572224769640006D65DD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C991B2F42476794E00C4F5A1 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		C991B2F724767B2C00C4F5A1 /* GiphResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphResponse.swift; sourceTree = "<group>"; };
+		C991B2F924767B3600C4F5A1 /* GiphRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphRealm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAAD62216BC29F7ED6FFBCF /* Pods_RosovGiphyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85587ADB4C93727D7F1C204C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4AD92FD15B2B3DA7BC960 /* Pods-RosovGiphyApp.debug.xcconfig */,
+				BF780C8DD5C0DB8214CABF10 /* Pods-RosovGiphyApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9FD7EA95ED863BB6234310AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53B9C7847332DA95EA8C90D4 /* Pods_RosovGiphyApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9014E1924767D8B00B86C7C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C96AE7112475CC7300A05FEA /* Main.storyboard */,
+				C9014E1C24767DC000B86C7C /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C9014E1A24767D9200B86C7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C96AE7142475CC7600A05FEA /* Assets.xcassets */,
+				C96AE7162475CC7700A05FEA /* LaunchScreen.storyboard */,
+				C96AE70D2475CC7300A05FEA /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9014E1B24767DA100B86C7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C96AE7192475CC7700A05FEA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9014E1C24767DC000B86C7C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C971571B2476862B006D65DD /* Cells */,
+				C9014E1E24767DF500B86C7C /* HomeVC.swift */,
+				C9014E2024767DFB00B86C7C /* HomeVM.swift */,
+				C9014E2224767E0100B86C7C /* HomeRouter.swift */,
+				C9014E2424767E0A00B86C7C /* HomeProtocols.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C9014E1D24767DE000B86C7C /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				C9014E2624767EC900B86C7C /* MainContext.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
 		C96AE6FF2475CC7300A05FEA = {
 			isa = PBXGroup;
 			children = (
 				C96AE70A2475CC7300A05FEA /* RosovGiphyApp */,
 				C96AE7092475CC7300A05FEA /* Products */,
+				85587ADB4C93727D7F1C204C /* Pods */,
+				9FD7EA95ED863BB6234310AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +154,60 @@
 			isa = PBXGroup;
 			children = (
 				C96AE70B2475CC7300A05FEA /* AppDelegate.swift */,
-				C96AE70D2475CC7300A05FEA /* SceneDelegate.swift */,
-				C96AE70F2475CC7300A05FEA /* ViewController.swift */,
-				C96AE7112475CC7300A05FEA /* Main.storyboard */,
-				C96AE7142475CC7600A05FEA /* Assets.xcassets */,
-				C96AE7162475CC7700A05FEA /* LaunchScreen.storyboard */,
-				C96AE7192475CC7700A05FEA /* Info.plist */,
+				C96AE71F2475CCFD00A05FEA /* Helpers */,
+				C9014E1D24767DE000B86C7C /* Context */,
+				C96AE7242475CD3300A05FEA /* API */,
+				C991B2F22476793500C4F5A1 /* Managers */,
+				C991B2F624767B1500C4F5A1 /* Model */,
+				C9014E1924767D8B00B86C7C /* Modules */,
+				C9014E1A24767D9200B86C7C /* Resources */,
+				C9014E1B24767DA100B86C7C /* Supporting Files */,
 			);
 			path = RosovGiphyApp;
+			sourceTree = "<group>";
+		};
+		C96AE71F2475CCFD00A05FEA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C96AE7212475CD2400A05FEA /* Cell+ID.swift */,
+				C96AE7202475CD2300A05FEA /* UIViewController+ID.swift */,
+				C9715720247694E2006D65DD /* UITextField+Close.swift */,
+				C971572224769640006D65DD /* UIColor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C96AE7242475CD3300A05FEA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C96AE7252475CD4300A05FEA /* GiphyAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C971571B2476862B006D65DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C971571E247686CD006D65DD /* GiphCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C991B2F22476793500C4F5A1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C991B2F42476794E00C4F5A1 /* DBManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C991B2F624767B1500C4F5A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C991B2F724767B2C00C4F5A1 /* GiphResponse.swift */,
+				C991B2F924767B3600C4F5A1 /* GiphRealm.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C96AE71C2475CC7700A05FEA /* Build configuration list for PBXNativeTarget "RosovGiphyApp" */;
 			buildPhases = (
+				B66CE74B07BDDDA5C51F77E3 /* [CP] Check Pods Manifest.lock */,
 				C96AE7042475CC7300A05FEA /* Sources */,
 				C96AE7052475CC7300A05FEA /* Frameworks */,
 				C96AE7062475CC7300A05FEA /* Resources */,
+				EEB1E631261C2868BDC7BA7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +278,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B66CE74B07BDDDA5C51F77E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RosovGiphyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB1E631261C2868BDC7BA7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RosovGiphyApp/Pods-RosovGiphyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RosovGiphyApp/Pods-RosovGiphyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RosovGiphyApp/Pods-RosovGiphyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C96AE7042475CC7300A05FEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C96AE7102475CC7300A05FEA /* ViewController.swift in Sources */,
+				C9014E2324767E0100B86C7C /* HomeRouter.swift in Sources */,
+				C9014E2124767DFB00B86C7C /* HomeVM.swift in Sources */,
+				C9014E1F24767DF500B86C7C /* HomeVC.swift in Sources */,
+				C96AE7232475CD2400A05FEA /* Cell+ID.swift in Sources */,
+				C96AE7262475CD4300A05FEA /* GiphyAPI.swift in Sources */,
+				C971572324769640006D65DD /* UIColor.swift in Sources */,
+				C9014E2524767E0A00B86C7C /* HomeProtocols.swift in Sources */,
+				C9715721247694E2006D65DD /* UITextField+Close.swift in Sources */,
+				C96AE7222475CD2400A05FEA /* UIViewController+ID.swift in Sources */,
+				C971571F247686CD006D65DD /* GiphCell.swift in Sources */,
+				C9014E2724767EC900B86C7C /* MainContext.swift in Sources */,
+				C991B2F824767B2D00C4F5A1 /* GiphResponse.swift in Sources */,
+				C991B2FA24767B3600C4F5A1 /* GiphRealm.swift in Sources */,
 				C96AE70C2475CC7300A05FEA /* AppDelegate.swift in Sources */,
 				C96AE70E2475CC7300A05FEA /* SceneDelegate.swift in Sources */,
+				C991B2F52476794E00C4F5A1 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +482,12 @@
 		};
 		C96AE71D2475CC7700A05FEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D4AD92FD15B2B3DA7BC960 /* Pods-RosovGiphyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AAXBU9249F;
-				INFOPLIST_FILE = RosovGiphyApp/Info.plist;
+				INFOPLIST_FILE = "RosovGiphyApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +501,12 @@
 		};
 		C96AE71E2475CC7700A05FEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF780C8DD5C0DB8214CABF10 /* Pods-RosovGiphyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AAXBU9249F;
-				INFOPLIST_FILE = RosovGiphyApp/Info.plist;
+				INFOPLIST_FILE = "RosovGiphyApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
