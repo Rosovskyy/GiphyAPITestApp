@@ -13,7 +13,7 @@ import RxCocoa
 final class HomeViewModel: HomeVMProtocol {
     
     // MARK: - Properties
-    var api: GiphyAPI
+    private var api: GiphyAPI
     
     let giphsList = BehaviorRelay<[GiphResponse]>(value: [])
     let requestFailure = PublishRelay<Void>()

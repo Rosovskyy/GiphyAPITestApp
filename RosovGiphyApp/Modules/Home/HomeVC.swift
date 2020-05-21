@@ -10,14 +10,14 @@ import UIKit
 import NSObject_Rx
 import MBProgressHUD
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     
     // MARK: - Properties
     var viewModel: HomeVMProtocol?
     var router: HomeRouterProtocol?
         
     // MARK: - Views
-    let searchTextField: UITextField = {
+    private let searchTextField: UITextField = {
         var textField = UITextField()
         textField.placeholder = "Type tag here"
         textField.borderStyle = .line
@@ -26,13 +26,13 @@ class HomeViewController: UIViewController {
         return textField
     }()
 
-    let collectionView: UICollectionView = {
+    private let collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         collectionView.backgroundColor = .clear
         return collectionView
     }()
 
-    let gifsLabel: UILabel = {
+    private let gifsLabel: UILabel = {
         let label = UILabel()
         label.text = "Gifs:"
         label.textColor = .white
@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
         return label
     }()
     
-    let enterTagLabel: UILabel = {
+    private let enterTagLabel: UILabel = {
         let label = UILabel()
         label.text = "Enter the tag:"
         label.textColor = .white

@@ -21,7 +21,7 @@ class GiphRealm: Object, Encodable {
     
     convenience init(resp: GiphResponse) {
         self.init()
-        self.id = resp.giphURL.absoluteString // Hardcoded
+        self.id = String.randomString()
         self.giphURL = resp.giphURL.absoluteString
         self.tag = resp.tag
     }

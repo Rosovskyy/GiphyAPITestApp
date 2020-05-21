@@ -29,7 +29,7 @@ class DBManager {
     }
     
     func add(img: GiphRealm) {
-        self.addData(object: img)
+        addData(object: img)
     }
 
     func delete(giph: GiphRealm) {
