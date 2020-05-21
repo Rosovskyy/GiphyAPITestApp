@@ -33,6 +33,11 @@ final class HomeViewModel: HomeVMProtocol {
 // MARK: - Protocol
 extension HomeViewModel {
     func getGiphByTag(tag: String) {
+        if !tag.isAlphanumeric {
+            requestFailure.accept(())
+            return
+        }
+        
         api.getGiphByTag(tag: tag, success: { (resp) in
             var giphs = self.giphsList.value
             giphs.insert(resp, at: 0)

@@ -25,6 +25,7 @@
 		C9715721247694E2006D65DD /* UITextField+Close.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9715720247694E2006D65DD /* UITextField+Close.swift */; };
 		C971572324769640006D65DD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971572224769640006D65DD /* UIColor.swift */; };
 		C9737A3D2476A45500547B42 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9737A3C2476A45500547B42 /* UIView+Corners.swift */; };
+		C9737A412476AA4000547B42 /* String+AlphaNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9737A402476AA4000547B42 /* String+AlphaNumeric.swift */; };
 		C991B2F52476794E00C4F5A1 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B2F42476794E00C4F5A1 /* DBManager.swift */; };
 		C991B2F824767B2D00C4F5A1 /* GiphResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B2F724767B2C00C4F5A1 /* GiphResponse.swift */; };
 		C991B2FA24767B3600C4F5A1 /* GiphRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B2F924767B3600C4F5A1 /* GiphRealm.swift */; };
@@ -53,6 +54,7 @@
 		C9715720247694E2006D65DD /* UITextField+Close.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Close.swift"; sourceTree = "<group>"; };
 		C971572224769640006D65DD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		C9737A3C2476A45500547B42 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
+		C9737A402476AA4000547B42 /* String+AlphaNumeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AlphaNumeric.swift"; sourceTree = "<group>"; };
 		C991B2F42476794E00C4F5A1 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		C991B2F724767B2C00C4F5A1 /* GiphResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphResponse.swift; sourceTree = "<group>"; };
 		C991B2F924767B3600C4F5A1 /* GiphRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphRealm.swift; sourceTree = "<group>"; };
@@ -171,11 +173,8 @@
 		C96AE71F2475CCFD00A05FEA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C96AE7212475CD2400A05FEA /* Cell+ID.swift */,
-				C96AE7202475CD2300A05FEA /* UIViewController+ID.swift */,
-				C9715720247694E2006D65DD /* UITextField+Close.swift */,
-				C971572224769640006D65DD /* UIColor.swift */,
-				C9737A3C2476A45500547B42 /* UIView+Corners.swift */,
+				C9737A3E2476AA2200547B42 /* UIKit+Extensions */,
+				C9737A3F2476AA3400547B42 /* Other+Extensions */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -194,6 +193,26 @@
 				C971571E247686CD006D65DD /* GiphCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C9737A3E2476AA2200547B42 /* UIKit+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C96AE7212475CD2400A05FEA /* Cell+ID.swift */,
+				C96AE7202475CD2300A05FEA /* UIViewController+ID.swift */,
+				C9715720247694E2006D65DD /* UITextField+Close.swift */,
+				C971572224769640006D65DD /* UIColor.swift */,
+				C9737A3C2476A45500547B42 /* UIView+Corners.swift */,
+			);
+			path = "UIKit+Extensions";
+			sourceTree = "<group>";
+		};
+		C9737A3F2476AA3400547B42 /* Other+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9737A402476AA4000547B42 /* String+AlphaNumeric.swift */,
+			);
+			path = "Other+Extensions";
 			sourceTree = "<group>";
 		};
 		C991B2F22476793500C4F5A1 /* Managers */ = {
@@ -331,6 +350,7 @@
 				C9014E2324767E0100B86C7C /* HomeRouter.swift in Sources */,
 				C9014E2124767DFB00B86C7C /* HomeVM.swift in Sources */,
 				C9014E1F24767DF500B86C7C /* HomeVC.swift in Sources */,
+				C9737A412476AA4000547B42 /* String+AlphaNumeric.swift in Sources */,
 				C96AE7232475CD2400A05FEA /* Cell+ID.swift in Sources */,
 				C96AE7262475CD4300A05FEA /* GiphyAPI.swift in Sources */,
 				C971572324769640006D65DD /* UIColor.swift in Sources */,
