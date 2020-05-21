@@ -14,6 +14,7 @@ final class HomeViewModel: HomeVMProtocol {
     
     // MARK: - Properties
     private var api: GiphyAPI
+    private var gifsRealm = [GiphRealm]()
     
     let giphsList = BehaviorRelay<[GiphResponse]>(value: [])
     let requestFailure = PublishRelay<Void>()
@@ -42,9 +43,11 @@ extension HomeViewModel {
             var giphs = self.giphsList.value
             giphs.insert(resp, at: 0)
             self.giphsList.accept(giphs)
+            let gifRealm = GiphRealm(resp: resp)
+            self.gifsRealm.insert(gifRealm, at: 0)
             
             DispatchQueue.main.async {
-                DBManager.shared.add(img: GiphRealm(resp: resp))
+                DBManager.shared.add(img: gifRealm)
             }
         }) {
             self.requestFailure.accept(())
@@ -52,8 +55,8 @@ extension HomeViewModel {
     }
 
     func getLastGifs() {
-        let lastGiph = DBManager.shared.getDataFromDB(with: GiphRealm.self)
-        lastGiphGot(giphList: Array(lastGiph))
+        gifsRealm = Array(DBManager.shared.getDataFromDB(with: GiphRealm.self))
+        lastGiphGot(giphList: Array(gifsRealm))
     }
     
     func getNumberOfGiphs() -> Int {
@@ -66,8 +69,11 @@ extension HomeViewModel {
     
     func gifDeleted(indexPath: IndexPath) {
         var gifs = giphsList.value
-        DBManager.shared.delete(giph: GiphRealm(resp: gifs[indexPath.row]))
+        DBManager.shared.delete(giph: gifsRealm[indexPath.row])
+        
+        gifsRealm.remove(at: indexPath.row)
         gifs.remove(at: indexPath.row)
+        
         giphsList.accept(gifs)
     }
 }
