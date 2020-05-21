@@ -24,6 +24,7 @@
 		C971571F247686CD006D65DD /* GiphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971571E247686CD006D65DD /* GiphCell.swift */; };
 		C9715721247694E2006D65DD /* UITextField+Close.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9715720247694E2006D65DD /* UITextField+Close.swift */; };
 		C971572324769640006D65DD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971572224769640006D65DD /* UIColor.swift */; };
+		C9737A3D2476A45500547B42 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9737A3C2476A45500547B42 /* UIView+Corners.swift */; };
 		C991B2F52476794E00C4F5A1 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B2F42476794E00C4F5A1 /* DBManager.swift */; };
 		C991B2F824767B2D00C4F5A1 /* GiphResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B2F724767B2C00C4F5A1 /* GiphResponse.swift */; };
 		C991B2FA24767B3600C4F5A1 /* GiphRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B2F924767B3600C4F5A1 /* GiphRealm.swift */; };
@@ -51,6 +52,7 @@
 		C971571E247686CD006D65DD /* GiphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphCell.swift; sourceTree = "<group>"; };
 		C9715720247694E2006D65DD /* UITextField+Close.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Close.swift"; sourceTree = "<group>"; };
 		C971572224769640006D65DD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C9737A3C2476A45500547B42 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		C991B2F42476794E00C4F5A1 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		C991B2F724767B2C00C4F5A1 /* GiphResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphResponse.swift; sourceTree = "<group>"; };
 		C991B2F924767B3600C4F5A1 /* GiphRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphRealm.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				C96AE7202475CD2300A05FEA /* UIViewController+ID.swift */,
 				C9715720247694E2006D65DD /* UITextField+Close.swift */,
 				C971572224769640006D65DD /* UIColor.swift */,
+				C9737A3C2476A45500547B42 /* UIView+Corners.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				C971572324769640006D65DD /* UIColor.swift in Sources */,
 				C9014E2524767E0A00B86C7C /* HomeProtocols.swift in Sources */,
 				C9715721247694E2006D65DD /* UITextField+Close.swift in Sources */,
+				C9737A3D2476A45500547B42 /* UIView+Corners.swift in Sources */,
 				C96AE7222475CD2400A05FEA /* UIViewController+ID.swift in Sources */,
 				C971571F247686CD006D65DD /* GiphCell.swift in Sources */,
 				C9014E2724767EC900B86C7C /* MainContext.swift in Sources */,

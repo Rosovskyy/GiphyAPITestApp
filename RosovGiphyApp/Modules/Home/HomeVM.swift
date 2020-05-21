@@ -22,8 +22,15 @@ final class HomeViewModel: HomeVMProtocol {
     init(api: GiphyAPI) {
         self.api = api
     }
+    
+    // MARK: - Private
+    private func lastGiphGot(giphList: [GiphRealm]) {
+        let gifs = giphList.map { GiphResponse(realm: $0) }
+        giphsList.accept(gifs)
+    }
 }
 
+// MARK: - Protocol
 extension HomeViewModel {
     func getGiphByTag(tag: String) {
         api.getGiphByTag(tag: tag, success: { (resp) in
@@ -38,9 +45,10 @@ extension HomeViewModel {
             self.requestFailure.accept(())
         }
     }
-    
-    func lastGiphGot(giph: GiphRealm) {
-        giphsList.accept([GiphResponse(realm: giph)])
+
+    func getLastGifs() {
+        let lastGiph = DBManager.shared.getDataFromDB(with: GiphRealm.self)
+        lastGiphGot(giphList: Array(lastGiph))
     }
     
     func getNumberOfGiphs() -> Int {
@@ -53,18 +61,9 @@ extension HomeViewModel {
     
     func gifDeleted(indexPath: IndexPath) {
         var gifs = giphsList.value
+        DBManager.shared.delete(giph: GiphRealm(resp: gifs[indexPath.row]))
         gifs.remove(at: indexPath.row)
         giphsList.accept(gifs)
-        
-        if indexPath.row == 0 {
-            if gifs.count > 0 {
-                DispatchQueue.main.async {
-                    DBManager.shared.add(img: GiphRealm(resp: gifs[0]))
-                }
-            } else {
-                DBManager.shared.deleteAll()
-            }
-        }
     }
 }
 

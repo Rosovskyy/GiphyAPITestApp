@@ -18,7 +18,7 @@ protocol HomeVMProtocol {
     var requestFailure: PublishRelay<Void> { get }
     
     func getGiphByTag(tag: String)
-    func lastGiphGot(giph: GiphRealm)
+    func getLastGifs()
     
     // DataSource
     func getNumberOfGiphs() -> Int

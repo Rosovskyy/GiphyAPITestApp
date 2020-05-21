@@ -72,9 +72,7 @@ class HomeViewController: UIViewController {
         collectionView.register(GiphCell.self, forCellWithReuseIdentifier: GiphCell.id)
         
         // Data
-        if let lastGiph = DBManager.shared.getDataFromDB(with: GiphRealm.self).first {
-            viewModel?.lastGiphGot(giph: lastGiph)
-        }
+        viewModel?.getLastGifs()
     }
     
     private func setupViews() {
@@ -93,7 +91,7 @@ class HomeViewController: UIViewController {
         
         collectionView
             .add(toSuperview: view)
-            .pin(topTo: gifsLabel.bottomAnchor, leftTo: view.leftAnchor, bottomTo: view.bottomAnchor, rightTo: view.rightAnchor, withInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), priority: UILayoutPriority(1000))
+            .pin(topTo: gifsLabel.bottomAnchor, leftTo: view.leftAnchor, bottomTo: view.bottomAnchor, rightTo: view.rightAnchor, withInsets: UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0), priority: UILayoutPriority(1000))
     }
     
     private func prepareBind() {

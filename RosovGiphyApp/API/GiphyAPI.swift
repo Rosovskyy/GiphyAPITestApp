@@ -24,12 +24,15 @@ class GiphyAPI {
         let path = baseUrl + "?api_key=\(token)&limit=\(limit)&q=\(tag)".replacingOccurrences(of: " ", with: "%20")
         
         guard let url = URL(string: path) else { return }
+        var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 6)
+        request.timeoutInterval = 6
         
         let sessionConfig = URLSessionConfiguration.default
-        sessionConfig.timeoutIntervalForResource = 8
+        sessionConfig.timeoutIntervalForResource = 4
+        sessionConfig.timeoutIntervalForRequest = 4
         let session = URLSession(configuration: sessionConfig)
         
-        dataTask = session.dataTask(with: url) { [weak self] data, response, error in
+        dataTask = session.dataTask(with: request) { [weak self] data, response, error in
             defer {
               self?.dataTask = nil
             }
